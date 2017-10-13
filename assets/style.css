@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+}
+
+body {
+  --orange1: #f89932;
+  --orange2: #ffaf00;
+  --orange3: #a34300;
+  --brow:  #210002;
+  display: flex;
+  background-color: var(--orange1);
+  padding: 16px;
+  padding-left: 0;
+  font-family: 'Josefin Sans', sans-serif;
+  color: var(--brow);
+  padding-top: 68px;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+p {
+  font-weight: 300;
+  margin: 8px;
+}
+
+section {
+  width: 360px;
+  border-radius: 4px;
+  margin-bottom: 24px;
+  padding: 40px;
+  text-align: center;
+}
+
+#main .avatar img {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  margin-bottom: 8px;
+  border: solid 2px var(--brow);
+}
+
+footer {
+  text-align: center;
+}
+
+
+.social-icon {
+    color: #fff;
+}
+
+ul.social-icons {
+    margin-top: 38px;
+    padding: 0;
+}
+.social-icons li {
+    vertical-align: top;
+    display: inline;
+    height: 100px;
+    margin: 8px;
+}
+
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.fa-facebook {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    border-radius: 100%;
+    background-color: #3d5b99;
+}
+
+.fa-twitter {
+    padding:10px 11px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    border-radius: 100%;
+    background-color: #00aced;
+}
+
+.fa-linkedin {
+    padding:10px 12px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    border-radius: 100%;
+    background-color: #0073a4;
+}
+
+.fa-github {
+    padding:10px 12px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    border-radius: 100%;
+    background-color: #454545;
+}
+
+.fa-spotify {
+    padding:10px 12px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    border-radius: 100%;
+    background-color: #5cba56;
+}
+
+
+div.tab {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  background-color: var(--brow);
+}
+
+/* Style the buttons inside the tab */
+div.tab button {
+  display: block;
+  background-color: inherit;
+  color: var(--orange1);
+  padding: 8px 16px;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 14px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+  background-color: #5a1715;
+}
+
+/* Create an active/current "tab button" class */
+div.tab button.active {
+  background-color: var(--orange3);
+}
+
+/* Style the tab content */
+.tabcontent {
+  padding: 0px 12px;
+  border-left: none;
+}
+
+#content {
+  padding: 10px;
+  width: 60%;
+  border: solid 1px #dd6b2d;
+  display: flex;
+}
+
+#content h2 {
+  text-align: left;
+}
+
+#content .info {
+  display: flex;
+  margin-top: 16px;
+}
+
+#content .info img {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+
+.info-about {
+  margin-top: 24px;
+}

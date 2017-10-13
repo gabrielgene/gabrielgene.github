@@ -1,1 +1,98 @@
-Hello World
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>Gabriel Genê</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="assets/style.css" />
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:700i|Special+Elite" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	<div class="tab">
+		<button class="tablinks" onclick="openCity(event, 'projects')" id="defaultOpen">Projects</button>
+		<button class="tablinks" onclick="openCity(event, 'skills')">Skills</button>
+		<button class="tablinks" onclick="openCity(event, 'about')">About</button>
+	</div>
+	<section id="main">
+		<header class="avatar">
+			<img src="https://avatars3.githubusercontent.com/u/19671668?s=460&v=4" alt="" />
+			<h1>Gabriel Genê</h1>
+			<p>Trainne Engineer</p>
+			<ul class="social-icons">
+				<li>
+					<a href="" class="social-icon">
+						<i class="fa fa-facebook"></i>
+					</a>
+				</li>
+				<li>
+					<a href="" class="social-icon">
+						<i class="fa fa-twitter"></i>
+					</a>
+				</li>
+				<li>
+					<a href="" class="social-icon">
+						<i class="fa fa-linkedin"></i>
+					</a>
+				</li>
+				<li>
+					<a href="" class="social-icon">
+						<i class="fa fa-github"></i>
+					</a>
+				</li>
+				<li>
+					<a href="" class="social-icon">
+						<i class="fa fa-spotify"></i>
+					</a>
+				</li>
+			</ul>
+		</header>
+	</section>
+	<section id="content">
+		<div id="projects" class="tabcontent">
+			<h2>Projetos</h2>
+			<div class="info">
+				<div class="info-avatar">
+					<a href="https://gabrielgene.github.io/hackathon-ssa/" target="_blank">
+						<img src="https://github.com/gabrielgene/hackathon-ssa/blob/master/assets/images/fav.png?raw=true" alt="hackathon">
+					</a>
+					<p>Eu e Tour</p>
+				</div>
+				<p class="info-about">A tour guide based on the user, done only with html css and javascript.</p>
+			</div>
+		</div>
+
+		<div id="skills" class="tabcontent">
+			<h2>
+				</h3>Skills</h2>
+			<p>Paris is the capital of France.</p>
+		</div>
+
+		<div id="about" class="tabcontent">
+			<h2>About</h2>
+			<p>Tokyo is the capital of Japan.</p>
+		</div>
+	</section>
+	<script>
+		function openCity(evt, cityName) {
+			var i, tabcontent, tablinks;
+			tabcontent = document.getElementsByClassName("tabcontent");
+			for (i = 0; i < tabcontent.length; i++) {
+				tabcontent[i].style.display = "none";
+			}
+			tablinks = document.getElementsByClassName("tablinks");
+			for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(" active", "");
+			}
+			document.getElementById(cityName).style.display = "block";
+			evt.currentTarget.className += " active";
+		}
+
+		// Get the element with id="defaultOpen" and click on it
+		document.getElementById("defaultOpen").click();
+	</script>
+</body>
+
+</html>
